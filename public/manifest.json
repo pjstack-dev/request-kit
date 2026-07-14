@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "RequestKit",
+  "version": "1.0.0",
+  "description": "按站点或为所有站点快速设置和管理请求头。",
+  "minimum_chrome_version": "120",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "RequestKit",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}
